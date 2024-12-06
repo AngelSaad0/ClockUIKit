@@ -1,0 +1,16 @@
+PODS:
+  - Device (3.7.0)
+
+DEPENDENCIES:
+  - Device
+
+SPEC REPOS:
+  trunk:
+    - Device
+
+SPEC CHECKSUMS:
+  Device: acf18785fd7359aca095040e9c4745caf33b9cf1
+
+PODFILE CHECKSUM: 8dc5a11f787c10f5bff20ecd7f647d79e2850739
+
+COCOAPODS: 1.16.2

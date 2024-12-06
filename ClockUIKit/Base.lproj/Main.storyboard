@@ -1,24 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jyM-mL-ABr">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="96J-iz-Crs">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="jyM-mL-ABr" customClass="ViewController" customModule="Clock" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nrb-db-Ozt">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="kH5-RG-Bq3">
+                                <rect key="frame" x="51" y="37.666666666666657" width="291" height="281"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="291" id="3fl-sL-oOn"/>
+                                    <constraint firstAttribute="height" constant="281" id="WxQ-x6-lcM"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="unb-GC-KDj">
+                                <rect key="frame" x="51" y="285.66666666666669" width="291" height="281.00000000000006"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="291" id="XYE-xB-Mq7"/>
+                                    <constraint firstAttribute="height" constant="281" id="YEV-CI-Psf"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="horizontal" translatesAutoresizingMaskIntoConstraints="NO" id="81d-kv-pNS">
+                                <rect key="frame" x="56.666666666666657" y="158.66666666666663" width="280" height="281"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="4eP-eN-32R"/>
+                                    <constraint firstAttribute="height" constant="281" id="NSl-sc-ZAw"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="horizontal" translatesAutoresizingMaskIntoConstraints="NO" id="O15-N8-bVC">
+                                <rect key="frame" x="56.666666666666657" y="411.66666666666674" width="280" height="281"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="R7W-bz-Gfk"/>
+                                    <constraint firstAttribute="height" constant="281" id="Ymj-N3-xfv"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="VsQ-E0-gDp">
+                                <rect key="frame" x="51" y="533.66666666666663" width="291" height="281"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="281" id="Wlc-ZB-nOj"/>
+                                    <constraint firstAttribute="width" constant="291" id="dUE-V8-rWG"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ns3-44-a8t"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kH5-RG-Bq3" firstAttribute="centerX" secondItem="Nrb-db-Ozt" secondAttribute="centerX" id="4WN-bn-LSG"/>
+                            <constraint firstItem="VsQ-E0-gDp" firstAttribute="centerX" secondItem="Nrb-db-Ozt" secondAttribute="centerX" id="8nL-jd-CGD"/>
+                            <constraint firstItem="81d-kv-pNS" firstAttribute="centerY" secondItem="Nrb-db-Ozt" secondAttribute="centerY" constant="-127" id="CGh-1N-pcE"/>
+                            <constraint firstItem="unb-GC-KDj" firstAttribute="centerX" secondItem="Nrb-db-Ozt" secondAttribute="centerX" id="Ew9-BV-XSd"/>
+                            <constraint firstItem="kH5-RG-Bq3" firstAttribute="centerY" secondItem="Nrb-db-Ozt" secondAttribute="centerY" constant="-248" id="J8d-dW-Kjg"/>
+                            <constraint firstItem="unb-GC-KDj" firstAttribute="centerY" secondItem="Nrb-db-Ozt" secondAttribute="centerY" id="cA2-Rx-AO0"/>
+                            <constraint firstItem="VsQ-E0-gDp" firstAttribute="centerY" secondItem="Nrb-db-Ozt" secondAttribute="centerY" constant="248" id="fao-Ya-AK9"/>
+                            <constraint firstItem="81d-kv-pNS" firstAttribute="centerX" secondItem="Nrb-db-Ozt" secondAttribute="centerX" id="joB-cw-4bK"/>
+                            <constraint firstItem="O15-N8-bVC" firstAttribute="centerX" secondItem="Nrb-db-Ozt" secondAttribute="centerX" id="pQE-Lg-fEr"/>
+                            <constraint firstItem="O15-N8-bVC" firstAttribute="centerY" secondItem="Nrb-db-Ozt" secondAttribute="centerY" constant="126" id="tbU-G0-OMw"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="hour" destination="kH5-RG-Bq3" id="Ang-Mm-wE0"/>
+                        <outlet property="minute" destination="unb-GC-KDj" id="H7o-PM-rLw"/>
+                        <outlet property="second" destination="VsQ-E0-gDp" id="1eR-t1-BhZ"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xCu-hm-Okh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2065" y="-294"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="0" width="166.66667175292969" height="166.66667175292969"/>
+        <image name="horizontal" width="166.66667175292969" height="166.66667175292969"/>
+    </resources>
 </document>
